@@ -17,18 +17,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={inter.variable}>
       <body className="min-h-screen flex flex-col font-sans">
-        <header className="absolute top-0 left-0 w-full z-20 px-6 py-4 md:px-16 lg:px-24 flex justify-between items-center bg-transparent  animate-fade-in-down">
+        <header className="absolute top-0 left-0 w-full z-20 px-6 py-4 md:px-16 lg:px-24 flex justify-between items-center bg-black bg-opacity-70 animate-fade-in-down">
           <Link href="/" className="text-white font-bold text-lg tracking-wide">
             PU Consulting
           </Link>
-          {/* <nav className="hidden md:flex gap-6 text-sm text-white font-medium">
+          <nav className="hidden md:flex gap-6 text-sm text-white font-medium">
             <Link href="/nosotros">Quiénes Somos</Link>
-            <Link href="/metodologia">Metodología</Link>
             <Link href="/servicios">Servicios</Link>
-            <Link href="/modelo-operativo">Modelo Operativo</Link>
             <Link href="/por-que-pu">¿Por qué PU?</Link>
             <Link href="/contacto" className="underline underline-offset-4">Contacto</Link>
-          </nav> */}
+          </nav>
         </header>
         <main className="flex-grow">{children}</main>
         <footer className="bg-gray-100 text-center text-xs py-4 text-gray-600">

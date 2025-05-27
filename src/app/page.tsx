@@ -28,15 +28,11 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <p className="text-sm uppercase tracking-wide text-white/70">
-            Dirección técnica estratégica
-          </p>
           <h1 className="mt-2 text-4xl md:text-6xl font-bold leading-tight">
-            Activamos inteligencia <br /> operativa desde adentro.
+            La Inteligencia Técnica También se Diseña.
           </h1>
           <p className="mt-4 text-lg text-white/90 max-w-xl">
-            PU Consulting no construye, pero hace que todo funcione. Integramos arquitectura,
-            ingeniería y estrategia para evitar sobrecostos y decisiones impulsivas.
+            PU Consulting transforma el conocimiento técnico en sistemas replicables para proyectos de construcción. Dirigimos el sistema que hace posible la construcción.
           </p>
           <a
             href="/contacto"
