@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import heroImg from '/public/business-data-analysis.jpg'
 import heroImg2 from '/public/planificacion_civil.png'
 import FooterConsultoria from '../components/FooterConsultoria'
 import SeccionQuienesSomos from '../components/SeccionQuienesSomos'
