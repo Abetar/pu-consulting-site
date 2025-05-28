@@ -10,7 +10,6 @@ import {
   Clock4,
   FileSearch,
   FileText,
-  FileEdit,
   Briefcase,
   GraduationCap,
   Settings,
