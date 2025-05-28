@@ -96,7 +96,7 @@ export default function SeccionMetricas() {
                             sublabel="Control de pagos y estimaciones"
                         />
                         <Metric
-                            end={40000}
+                            end={500000}
                             suffix="m²"
                             label="Proyectos"
                             sublabel="Escala de implementación metodológica"

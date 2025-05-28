@@ -76,7 +76,7 @@ const servicios = [
     icon: <Settings className="w-5 h-5 text-gray-700" />,
   },
   {
-    nombre: 'Herramientas de Control Personalizadas',
+    nombre: 'Herramientas Personalizadas',
     tiempo: '10 días',
     icon: <Wrench className="w-5 h-5 text-gray-700" />,
   },

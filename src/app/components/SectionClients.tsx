@@ -1,37 +1,32 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import {
-    Building2,
-    Hammer,
-    UserCheck,
-    Briefcase
-} from 'lucide-react'
+import Image from 'next/image'
 
 const clientes = [
     {
-        icon: <Building2 className="w-6 h-6 text-gray-700" />,
         titulo: 'Desarrolladoras',
         descripcion:
             'Consultoría técnica y financiera integral. Optimizamos rentabilidad y reducimos riesgos en cada etapa del proyecto.',
+        img: '/planificacion_civil.png',
     },
     {
-        icon: <Hammer className="w-6 h-6 text-gray-700" />,
         titulo: 'Constructoras / Contratistas',
         descripcion:
             'Dirección técnica operativa con foco en productividad. Mejoramos procesos constructivos y controlamos financieramente el proyecto.',
+        img: '/constructoras.jpg',
     },
     {
-        icon: <UserCheck className="w-6 h-6 text-gray-700" />,
         titulo: 'Profesionales Independientes',
         descripcion:
             'Coaching técnico personalizado y consultoría estratégica. Aumentamos tu eficiencia y claridad en proyectos clave.',
+        img: '/freelancer.jpg',
     },
     {
-        icon: <Briefcase className="w-6 h-6 text-gray-700" />,
-        titulo: 'Gerencias / Construction Management',
+        titulo: 'Gerencias de Proyectos',
         descripcion:
             'Apoyo técnico en decisiones clave, auditoría operativa y control financiero para una gestión efectiva.',
+        img: '/online-analysis-teamwork.jpg',
     },
 ]
 
@@ -44,16 +39,26 @@ export default function SeccionClientes() {
             transition={{ duration: 0.6 }}
             viewport={{ once: false }}
         >
-            <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12">Soluciones por Tipo de Cliente</h2>
+            <div className="bg-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between h-full">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12">
+                    Soluciones Integrales
+                </h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {clientes.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col items-start"
+                            className="bg-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col items-start text-left"
                         >
-                            <div className="mb-3">{item.icon}</div>
+                            <div className="w-full mb-4">
+                                <Image
+                                    src={item.img}
+                                    alt={item.titulo}
+                                    width={400} // puedes ajustar según tu diseño
+                                    height={120}
+                                    className="w-full h-auto object-contain"
+                                />
+                            </div>
                             <h3 className="text-lg font-semibold mb-2">{item.titulo}</h3>
                             <p className="text-sm text-gray-700">{item.descripcion}</p>
                         </div>
