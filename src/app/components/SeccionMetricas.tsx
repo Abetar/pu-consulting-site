@@ -59,30 +59,51 @@ const Metric = ({
 export default function SeccionMetricas() {
     return (
         <>
-            <section className="bg-white px-6 md:px-16 lg:px-24 py-20 text-black text-center">
+            <motion.section
+                className="text-black"
+                style={{ backgroundColor: '#ffffff' }} // Fondo claro
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: false }}
+            >
+                <section className="bg-white px-6 md:px-16 lg:px-24 py-20 text-black text-center">
 
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">Resultados y Diferenciales</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
-                    <Metric
-                        end={20}
-                        suffix="%"
-                        label="Reducción Administrativa"
-                        sublabel="Menor carga y tiempos de decisión"
-                    />
-                    <Metric
-                        end={100}
-                        suffix="%"
-                        label="Digital"
-                        sublabel="Control de pagos y estimaciones"
-                    />
-                    <Metric
-                        end={40000}
-                        suffix="m²"
-                        label="Proyectos"
-                        sublabel="Escala de implementación metodológica"
-                    />
-                </div>
-            </section>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-8">Resultados y Diferenciales</h2>
+
+
+
+                    <div className="max-w-3xl mx-auto text-center space-y-8 mb-12">
+                        <p className="text-base md:text-lg text-black leading-relaxed">
+                            PU opera como un <strong>cerebro externo</strong>. Integra arquitectura, ingeniería, compras, contratistas y cliente en un solo flujo funcional.
+                            Sustituye burocracia por metodología, y confusión por claridad técnica. Cada entregable tiene un propósito, cada paso un sentido.
+                        </p>
+                    </div>
+
+
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                        <Metric
+                            end={20}
+                            suffix="%"
+                            label="Reducción Administrativa"
+                            sublabel="Menor carga y tiempos de decisión"
+                        />
+                        <Metric
+                            end={100}
+                            suffix="%"
+                            label="Digital"
+                            sublabel="Control de pagos y estimaciones"
+                        />
+                        <Metric
+                            end={40000}
+                            suffix="m²"
+                            label="Proyectos"
+                            sublabel="Escala de implementación metodológica"
+                        />
+                    </div>
+                </section>
+            </motion.section >
         </>
     )
 }

@@ -15,21 +15,19 @@ export default function SeccionFAQ() {
             <div className="flex flex-col md:flex-row items-start gap-12">
                 {/* FAQ texto */}
                 <div className="md:w-1/2 space-y-8">
-                    <h2 className="text-2xl md:text-3xl font-semibold uppercase">Preguntas Frecuentes</h2>
+                    <h2 className="text-2xl md:text-3xl font-semibold">Casos de Éxito</h2>
 
                     <div>
-                        <h3 className="text-sm md:text-base font-bold mb-1">¿A qué mercados prestas servicio actualmente?</h3>
+                        <h3 className="text-sm md:text-base font-bold mb-1">Experiencia y Resultados</h3>
                         <p className="text-sm md:text-base text-gray-700">
-                            Tenemos oficinas centrales en América del Norte, Asia Pacífico y Europa, lo que nos da un amplio alcance.
-                            Actualmente estamos bien posicionados para servir a los clientes en mercados emergentes y desarrollados.
+                            Hemos brindado asesoría estratégica y técnica clave para la ejecución de más de 500,000 m² de construcción, gestionando presupuestos individuales de hasta 1.8 mil millones de pesos y sumando en conjunto más de 5,000 millones de pesos gestionados con mejores prácticas y resultados comprobados
                         </p>
                     </div>
 
                     <div>
-                        <h3 className="text-sm md:text-base font-bold mb-1">¿Cómo puedo configurar una consulta y demo?</h3>
+                        <h3 className="text-sm md:text-base font-bold mb-1">Sección Modelo Operativo (Células Fractales)</h3>
                         <p className="text-sm md:text-base text-gray-700">
-                            Ofrecemos una consulta inicial gratis a nuevos clientes, para entender mejor sus necesidades y explicar
-                            nuestros servicios. Simplemente envíanos un correo para reservar tu sesión.
+                            Operamos con un modelo innovador de células autónomas, replicables y especializadas en cada cliente o proyecto. Cada célula funciona como una microfirma independiente, garantizando eficiencia, rentabilidad y adaptabilidad.
                         </p>
                     </div>
                 </div>

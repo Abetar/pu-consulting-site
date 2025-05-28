@@ -10,7 +10,7 @@ export default function SeccionContacto() {
                 <div className="max-w-screen-md mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-10">Contáctanos</h2>
                     <form
-                        action="https://formsubmit.co/TU_CORREO@gmail.com"
+                        action="https://formsubmit.co/ug.puconsulting@gmail.com"
                         method="POST"
                         className="space-y-6 text-left"
                     >
@@ -70,7 +70,7 @@ export default function SeccionContacto() {
                             type="submit"
                             className="bg-black text-white font-semibold px-6 py-2 rounded-md hover:bg-gray-900 transition"
                         >
-                            Enviar mensaje
+                            Solicita tu diganóstico inicial
                         </button>
                     </form>
                 </div>
