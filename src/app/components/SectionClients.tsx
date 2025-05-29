@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const clientes = [
     {
-        titulo: 'Desarrolladoras',
+        titulo: 'Desarrolladoras inmobiliarias',
         descripcion:
             'Consultoría técnica y financiera integral. Optimizamos rentabilidad y reducimos riesgos en cada etapa del proyecto.',
         img: '/planificacion_civil.png',
