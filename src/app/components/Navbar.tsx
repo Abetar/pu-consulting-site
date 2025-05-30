@@ -3,14 +3,23 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className="fixed top-0 left-0 w-full z-30 bg-black bg-opacity-70 px-6 py-4 md:px-16 lg:px-24 flex justify-between items-center">
-      <Link href="/" className="text-white font-bold text-lg tracking-wide">
-        PU Consulting
+      <Link href="/" className="flex items-center gap-2">
+        <Image
+          src="/pu-consulting-logo-nobg.png" // asegúrate de que esté en /public/logo-pu.png
+          alt="Logo PU Consulting"
+          width={36}
+          height={36}
+          priority
+          className="invert"
+        />
+        <span className="text-white font-bold text-lg tracking-wide">PU Consulting</span>
       </Link>
 
       {/* Hamburguesa */}
