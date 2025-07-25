@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 w-full z-30 bg-black bg-opacity-70 px-6 py-4 md:px-16 lg:px-24 flex justify-between items-center">
+    <header className="fixed top-0 left-0 w-full z-30 bg-black bg-opacity-100 px-6 py-4 md:px-16 lg:px-24 flex justify-between items-center">
       <Link href="/" className="flex items-center gap-2">
         <Image
           src="/pu-consulting-logo-nobg.png" // asegúrate de que esté en /public/logo-pu.png
