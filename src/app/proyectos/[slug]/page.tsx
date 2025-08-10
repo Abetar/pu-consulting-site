@@ -3,15 +3,20 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProjectBySlug, projects } from "../data";
 
-type Props = { params: { slug: string } };
-
+// SSG opcional
 export function generateStaticParams() {
   const unique = Array.from(new Set(projects.map((p) => p.slug)));
   return unique.map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: Props) {
-  const p = getProjectBySlug(params.slug);
+// SEO dinámico (Next 15: params puede ser Promise)
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const p = getProjectBySlug(slug);
   if (!p) return { title: "Proyecto no encontrado | PU Consulting" };
 
   const title = `${p.title} | Proyectos | PU Consulting`;
@@ -41,8 +46,14 @@ export function generateMetadata({ params }: Props) {
   };
 }
 
-export default function ProyectoDetailPage({ params }: Props) {
-  const project = getProjectBySlug(params.slug);
+// Página (Next 15: params puede ser Promise)
+export default async function ProyectoDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
   if (!project) return notFound();
 
   return (
@@ -71,6 +82,7 @@ export default function ProyectoDetailPage({ params }: Props) {
             {project.location ? `${project.location} · ` : ""}
             {project.year ?? ""}
           </p>
+
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {project.category && (
               <span className="px-2 py-0.5 text-xs rounded-full bg-neutral-100 text-neutral-700 border border-neutral-200">
@@ -91,6 +103,7 @@ export default function ProyectoDetailPage({ params }: Props) {
               </span>
             ))}
           </div>
+
           {project.summary ? (
             <p className="mt-4 text-sm text-neutral-700 max-w-3xl">
               {project.summary}
@@ -98,7 +111,7 @@ export default function ProyectoDetailPage({ params }: Props) {
           ) : null}
         </header>
 
-        {/* Galería completa */}
+        {/* Galería completa (responsive) */}
         <section aria-label="Galería de imágenes">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {project.gallery.map((src, idx) => (
