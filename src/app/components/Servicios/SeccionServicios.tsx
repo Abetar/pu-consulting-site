@@ -22,62 +22,62 @@ import SeccionClientes from '../SectionClients'
 const servicios = [
   {
     nombre: 'Dirección Técnica Integral',
-    tiempo: '15 días',
+    // tiempo: '15 días',
     icon: <HardHat className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Abastecimiento de Obra',
-    tiempo: '10 días',
+    // tiempo: '10 días',
     icon: <PackageSearch className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Capacitación a Contratistas',
-    tiempo: '7 días',
+    // tiempo: '7 días',
     icon: <Users className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Control de Proyecto',
-    tiempo: '10 días',
+    // tiempo: '10 días',
     icon: <BarChart className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Implementación Metodología PU',
-    tiempo: '3 meses',
+    // tiempo: '3 meses',
     icon: <ClipboardCheck className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Reporte de Avance de Obra',
-    tiempo: '48 horas',
+    // tiempo: '48 horas',
     icon: <Clock4 className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Estimación con generadores',
-    tiempo: '3 días',
+    // tiempo: '3 días',
     icon: <FileSearch className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Tarjeta de Precio Unitario',
-    tiempo: '2 días',
+    // tiempo: '2 días',
     icon: <FileText className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Soporte a Licitación',
-    tiempo: '5 días',
+    // tiempo: '5 días',
     icon: <Briefcase className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Coaching Técnico Personalizado',
-    tiempo: 'Agenda abierta',
+    // tiempo: 'Agenda abierta',
     icon: <GraduationCap className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Implementación Metodología PU',
-    tiempo: '3 semanas',
+    // tiempo: '3 semanas',
     icon: <Settings className="w-5 h-5 text-gray-700" />,
   },
   {
     nombre: 'Herramientas Personalizadas',
-    tiempo: '10 días',
+    // tiempo: '10 días',
     icon: <Wrench className="w-5 h-5 text-gray-700" />,
   },
 ]
@@ -113,7 +113,7 @@ export default function SeccionServicios() {
               >
                 <div className="mb-3">{servicio.icon}</div>
                 <h3 className="text-lg font-semibold mb-1">{servicio.nombre}</h3>
-                <p className="text-sm text-gray-600">Tiempo estimado: {servicio.tiempo}</p>
+                {/* <p className="text-sm text-gray-600">Tiempo estimado: {servicio.tiempo}</p> */}
               </div>
             ))}
           </div>

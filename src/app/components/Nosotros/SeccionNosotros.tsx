@@ -32,25 +32,26 @@ export default function Nosotros() {
             Misión
           </h1>
           <p className="text-base md:text-lg text-white/90">
-            Ser la firma de referencia en Latinoamérica en dirección técnica externa,
-            liderando con procesos eficientes, tecnología operativa y autonomía estratégica.
+            Ser la firma de referencia en Latinoamérica en dirección técnica
+            externa, liderando con procesos eficientes, tecnología operativa y
+            autonomía estratégica.
           </p>
 
           <h2 className="pt-4 md:pt-6 text-3xl md:text-5xl font-bold leading-tight">
             Visión
           </h2>
           <p className="text-base md:text-lg text-white/90">
-            Optimizar el abastecimiento, la gestión técnica y la toma de decisiones en
-            proyectos de construcción mediante sistemas replicables, medibles y alineados
-            con resultados.
+            Ser la firma de referencia en Monterrey y en Latinoamérica en
+            dirección técnica externa, con procesos claros y replicables para
+            todos los actores de la construcción.
           </p>
 
           <h2 className="pt-4 md:pt-6 text-3xl md:text-5xl font-bold leading-tight">
             Valores
           </h2>
           <p className="text-base md:text-lg text-white/90">
-            Transparencia, eficiencia, replicabilidad, independencia, innovación técnica y
-            enfoque colaborativo.
+            Cercanía con contratistas y propietarios. Profesionalización al
+            servicio del pueblo.
           </p>
         </motion.div>
       </section>

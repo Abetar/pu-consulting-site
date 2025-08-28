@@ -5,27 +5,38 @@ import Image from 'next/image'
 
 const clientes = [
     {
-        titulo: 'Desarrolladoras inmobiliarias',
+        titulo: 'Propietarios de Departamentos',
+        problemas: 'Entregas sin manual ni checklist. Fallas de post-venta constantes. Incertidumbre sobre lo que recibes.',
         descripcion:
-            'Consultoría técnica y financiera integral. Optimizamos rentabilidad y reducimos riesgos en cada etapa del proyecto.',
+            'Manual técnico de propietario, checklist validado por expertos, y entregas profesionales con certeza documental.',
+        img: '/think_woman.png',
+    },
+    {
+        titulo: 'Constructoras y Contratistas',
+        problemas: 'Estimaciones rechazadas, procesos sin estandarización, retrabajos costosos.',
+        descripcion:
+            'Supervisión técnica en sitio, generación de precios unitarios claros, metodología PU 5X para reducir retrabajos y facilitar tu trabajo.',
         img: '/planificacion_civil.png',
     },
     {
-        titulo: 'Constructoras / Contratistas',
+        titulo: 'Desarrolladores Inmobiliarios',
+        problemas:'Sobrecostos, falta de coordinación entre áreas, informes poco claros para inversionistas.',
         descripcion:
-            'Dirección técnica operativa con foco en productividad. Mejoramos procesos constructivos y controlamos financieramente el proyecto.',
+            'Dirección técnica externa, optimización de costos, informes ejecutivos que facilitan decisiones rápidas.',
         img: '/constructoras.jpg',
     },
     {
         titulo: 'Profesionales Independientes',
+        problemas: 'Sobrecarga operativa, estrés laboral, dificultad para ganar licitaciones.',
         descripcion:
-            'Coaching técnico personalizado y consultoría estratégica. Aumentamos tu eficiencia y claridad en proyectos clave.',
+            'Coaching técnico, consultoría estratégica, plantillas PU para aumentar tu eficiencia y efectividad.',
         img: '/freelancer.jpg',
     },
     {
-        titulo: 'Gerencias de Proyectos',
+        titulo: 'Inversionistas y Socios Estratégicos',
+        problemas: 'Capital sin control técnico, decisiones lentas, falta de incubación de proyectos.',
         descripcion:
-            'Apoyo técnico en decisiones clave, auditoría operativa y control financiero para una gestión efectiva.',
+            'Informes ejecutivos claros, validación de estimaciones, incubadora de proyectos y desarrollo profesional. Operamos como una firma de inversión técnica accesible, orientada a escalar proyectos de manera segura y rentable.',
         img: '/online-analysis-teamwork.jpg',
     },
 ]
@@ -44,7 +55,7 @@ export default function SeccionClientes() {
                     Soluciones Integrales
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                     {clientes.map((item, index) => (
                         <div
                             key={index}
@@ -60,7 +71,9 @@ export default function SeccionClientes() {
                                 />
                             </div>
                             <h3 className="text-lg font-semibold mb-2">{item.titulo}</h3>
-                            <p className="text-sm text-gray-700">{item.descripcion}</p>
+                            <p className="text-sm text-gray-700"><span className='font-bold'>Problemas:</span> {item.problemas}</p>
+                            <br />
+                            <p className="text-sm text-gray-700"><span className='font-bold'>Solución:</span> {item.descripcion}</p>
                         </div>
                     ))}
                 </div>

@@ -6,27 +6,27 @@ const items = [
     {
         numero: '1',
         titulo: 'eXactitud',
-        descripcion: 'Claridad absoluta en alcance, tiempos, calidad y costos.',
+        descripcion: 'Claridad total desde el inicio.',
     },
     {
         numero: '2',
         titulo: 'eXecución / Ejecución',
-        descripcion: 'Implementación efectiva y precisa desde la primera ejecución.',
+        descripcion: 'Bien hecho, a la primera.',
     },
     {
         numero: '3',
         titulo: 'eXperiencia Compartida',
-        descripcion: 'Comunicación constante y efectiva en campo.',
+        descripcion: 'Comunicación sin ruido.',
     },
     {
         numero: '4',
         titulo: 'eXistencia de Orden',
-        descripcion: 'Disciplina visual, orden operativo y control constante.',
+        descripcion: 'Obra limpia, segura y productiva.',
     },
     {
         numero: '5',
         titulo: 'eXcelencia Progresiva',
-        descripcion: 'Análisis continuo, mejora sistemática y reconocimiento formal.',
+        descripcion: 'Mejora continua en cada entrega.',
     },
 ]
 
